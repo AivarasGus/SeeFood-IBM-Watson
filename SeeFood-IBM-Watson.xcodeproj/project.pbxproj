@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1432C15FF8CC34A6AC427F /* Pods_SeeFood_IBM_Watson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B892F6A9D11F51F2A9BBA9B0 /* Pods_SeeFood_IBM_Watson.framework */; };
 		C031CCBE22BD148F000DF641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CCBD22BD148F000DF641 /* AppDelegate.swift */; };
 		C031CCC022BD148F000DF641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C031CCBF22BD148F000DF641 /* ViewController.swift */; };
 		C031CCC322BD148F000DF641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C031CCC122BD148F000DF641 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BD36E0AD3752107E1E57EE0 /* Pods-SeeFood-IBM-Watson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeeFood-IBM-Watson.release.xcconfig"; path = "Target Support Files/Pods-SeeFood-IBM-Watson/Pods-SeeFood-IBM-Watson.release.xcconfig"; sourceTree = "<group>"; };
+		B892F6A9D11F51F2A9BBA9B0 /* Pods_SeeFood_IBM_Watson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeeFood_IBM_Watson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C031CCBA22BD148F000DF641 /* SeeFood-IBM-Watson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeeFood-IBM-Watson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C031CCBD22BD148F000DF641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C031CCBF22BD148F000DF641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C031CCC422BD1490000DF641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C031CCC722BD1490000DF641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C031CCC922BD1490000DF641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9DD2614FEBCCFD6EF0E1FB /* Pods-SeeFood-IBM-Watson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeeFood-IBM-Watson.debug.xcconfig"; path = "Target Support Files/Pods-SeeFood-IBM-Watson/Pods-SeeFood-IBM-Watson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1432C15FF8CC34A6AC427F /* Pods_SeeFood_IBM_Watson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2269024218FA818A6E8069F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB9DD2614FEBCCFD6EF0E1FB /* Pods-SeeFood-IBM-Watson.debug.xcconfig */,
+				9BD36E0AD3752107E1E57EE0 /* Pods-SeeFood-IBM-Watson.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B6300AAD28470D62729CB05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B892F6A9D11F51F2A9BBA9B0 /* Pods_SeeFood_IBM_Watson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C031CCB122BD148F000DF641 = {
 			isa = PBXGroup;
 			children = (
 				C031CCBC22BD148F000DF641 /* SeeFood-IBM-Watson */,
 				C031CCBB22BD148F000DF641 /* Products */,
+				2269024218FA818A6E8069F7 /* Pods */,
+				8B6300AAD28470D62729CB05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C031CCCC22BD1490000DF641 /* Build configuration list for PBXNativeTarget "SeeFood-IBM-Watson" */;
 			buildPhases = (
+				85B2E989D6DDB3A51E4942D7 /* [CP] Check Pods Manifest.lock */,
 				C031CCB622BD148F000DF641 /* Sources */,
 				C031CCB722BD148F000DF641 /* Frameworks */,
 				C031CCB822BD148F000DF641 /* Resources */,
+				1FBA1363E16D57D33313AAEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FBA1363E16D57D33313AAEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeeFood-IBM-Watson/Pods-SeeFood-IBM-Watson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeeFood-IBM-Watson/Pods-SeeFood-IBM-Watson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeeFood-IBM-Watson/Pods-SeeFood-IBM-Watson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B2E989D6DDB3A51E4942D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeeFood-IBM-Watson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C031CCB622BD148F000DF641 /* Sources */ = {
@@ -280,6 +348,7 @@
 		};
 		C031CCCD22BD1490000DF641 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9DD2614FEBCCFD6EF0E1FB /* Pods-SeeFood-IBM-Watson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +367,7 @@
 		};
 		C031CCCE22BD1490000DF641 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD36E0AD3752107E1E57EE0 /* Pods-SeeFood-IBM-Watson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
